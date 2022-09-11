@@ -11,3 +11,4 @@
 
 This is a another 'steps' project, which involves me creating a blog using Laravel. Even though this is an area that I am not experienced in, let the learning begin. 
 
+I would like to thank Traversy Media, found on Youtube, providing styling templates. 
