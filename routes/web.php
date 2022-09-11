@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Models\Listings;
+use App\Models\Listing;
 
 /*
 |--------------------------------------------------------------------------
