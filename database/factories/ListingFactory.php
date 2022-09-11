@@ -14,7 +14,6 @@ class ListingFactory extends Factory
     public function definition()
     {
         return [
-            'id' => 000,
             'title' => 'Title',
             'tags' =>  'tag1,tag2,tag3',
             'location' => $this->faker->city(),

@@ -25,6 +25,6 @@ class DatabaseSeeder extends Seeder
         //     'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
         //     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco'
         // ]);
-        Listing::factory(5)->create();
+        Listing::factory(6)->create();
     }
 }

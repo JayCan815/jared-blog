@@ -9,6 +9,6 @@
 
 ## About This Project
 
-This is a another 'steps' project, which involves me creating a blog using Laravel. Even though this is an area that I am not experienced in, let the learning begin. 
+This is a another 'steps' project, which involves me creating a craigs list esque copy using Laravel. The main goal of this project is to learn Laravel as well as get a strong understanding of PHP, both of which I had very little exposure of during my academic and personal projects.
 
 I would like to thank Traversy Media, found on Youtube, providing styling templates. 
