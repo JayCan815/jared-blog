@@ -1,6 +1,5 @@
 
 @extends('layout')
-
 @section('content')
 @include('partials._search')     
 <a href="index.html" class="inline-block text-black ml-4 mb-4"
@@ -23,22 +22,22 @@
             <li
                 class="bg-black text-white rounded-xl px-3 py-1 mr-2"
             >
-                <a href="#">Laravel</a>
+                <a href="#">labor</a>
             </li>
             <li
                 class="bg-black text-white rounded-xl px-3 py-1 mr-2"
             >
-                <a href="#">API</a>
+                <a href="#">cash</a>
             </li>
             <li
                 class="bg-black text-white rounded-xl px-3 py-1 mr-2"
             >
-                <a href="#">Backend</a>
+                <a href="#">for sale</a>
             </li>
             <li
                 class="bg-black text-white rounded-xl px-3 py-1 mr-2"
             >
-                <a href="#">Vue</a>
+                <a href="#">pets</a>
             </li>
         </ul>
         <div class="text-lg my-4">
@@ -53,7 +52,7 @@
                {{$listing->description}}
 
                 <a
-                    href="mailto:test@test.com"
+                    href="mailto:{{$listing->email}}"
                     class="block bg-laravel text-white mt-6 py-2 rounded-xl hover:opacity-80"
                     ><i class="fa-solid fa-envelope"></i>
                     Contact Employer</a
