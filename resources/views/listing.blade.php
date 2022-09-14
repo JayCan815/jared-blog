@@ -1,12 +1,15 @@
 
+{{-- This blade handles SINGLE listing display. This means it also contains descriptions.
+Implements card blade template as well as tag blade template  --}}
+
 @extends('layout')
 @section('content')
 @include('partials._search')     
-<a href="index.html" class="inline-block text-black ml-4 mb-4"
+<a href="/" class="inline-block text-black ml-4 mb-4"
 ><i class="fa-solid fa-arrow-left"></i> Back
 </a>
 <div class="mx-4">
-<x-card class="p-50">
+<x-card class="p-30">
     <div
         class="flex flex-col items-center justify-center text-center"
     >
@@ -18,28 +21,9 @@
 
         <h3 class="text-2xl mb-2">{{$listing->title}}</h3>
         <div class="text-xl font-bold mb-4">{{$listing->email}}</div>
-        <ul class="flex">
-            <li
-                class="bg-black text-white rounded-xl px-3 py-1 mr-2"
-            >
-                <a href="#">labor</a>
-            </li>
-            <li
-                class="bg-black text-white rounded-xl px-3 py-1 mr-2"
-            >
-                <a href="#">cash</a>
-            </li>
-            <li
-                class="bg-black text-white rounded-xl px-3 py-1 mr-2"
-            >
-                <a href="#">for sale</a>
-            </li>
-            <li
-                class="bg-black text-white rounded-xl px-3 py-1 mr-2"
-            >
-                <a href="#">pets</a>
-            </li>
-        </ul>
+       
+        <x-listing-tag :tagsCsv="$listing->tags"/>
+
         <div class="text-lg my-4">
             <i class="fa-solid fa-location-dot"></i> {{$listing->location}}
         </div>
